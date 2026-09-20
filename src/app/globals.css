@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream: #faf6f1;
+  --color-cream-dark: #f2ebe2;
+  --color-ink: #241f1c;
+  --color-ink-soft: #4a423c;
+  --color-rose: #c98a76;
+  --color-rose-deep: #a8654f;
+  --color-rose-pale: #f1ddd3;
+  --color-sage: #838f74;
+  --color-sage-pale: #e4e8dc;
+  --color-gold: #bd9b5f;
+  --color-line: #e6dcd2;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-rose: var(--color-rose);
+  --color-rose-deep: var(--color-rose-deep);
+  --color-rose-pale: var(--color-rose-pale);
+  --color-sage: var(--color-sage);
+  --color-sage-pale: var(--color-sage-pale);
+  --color-gold: var(--color-gold);
+  --color-line: var(--color-line);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-manrope);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-manrope);
+}
+
+.font-display {
+  font-family: var(--font-fraunces);
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-cream);
+}
+
+.leaflet-container {
+  font-family: var(--font-manrope);
+  background: var(--color-cream-dark) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
