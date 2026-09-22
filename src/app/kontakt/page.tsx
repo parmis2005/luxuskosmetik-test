@@ -18,7 +18,7 @@ export default function KontaktPage() {
         eyebrow="Kontakt"
         title="Wir freuen uns auf Sie"
         subtitle="Vereinbaren Sie unkompliziert Ihren Termin oder stellen Sie uns Ihre Fragen – persönlich, telefonisch oder per Formular."
-        image="/images/product-1.jpg"
+        image="/images/interior-1.jpg"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-24">

@@ -16,13 +16,16 @@ export default function Intro() {
             />
           </div>
           <div className="absolute -bottom-8 -right-4 hidden aspect-[4/3] w-56 overflow-hidden rounded-[1.5rem] border-8 border-cream shadow-xl sm:block">
-            <Image
-              src="/images/texture-1.jpg"
-              alt="Naturkosmetik Textur"
-              fill
-              sizes="14rem"
-              className="object-cover"
-            />
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/images/texture-1.jpg"
+            >
+              <source src="/videos/about.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
 

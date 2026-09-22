@@ -17,6 +17,8 @@ export default function Hero() {
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
+      {/* Same rose color-grade used on every subpage PageHero, so the tone is consistent from the first screen. */}
+      <div className="absolute inset-0 bg-rose-deep/35 mix-blend-color" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-ink/40" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/40 via-transparent to-ink/10" />
 

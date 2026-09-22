@@ -16,7 +16,7 @@ export default function FaqPage() {
         eyebrow="Häufige Fragen"
         title="Gut zu wissen"
         subtitle="Die wichtigsten Antworten rund um Ihren Besuch bei LUMARA – kurz und verständlich."
-        image="/images/texture-2.jpg"
+        image="/images/facial-3.jpg"
       />
 
       <section className="mx-auto max-w-3xl px-6 py-20 lg:px-10 lg:py-24">

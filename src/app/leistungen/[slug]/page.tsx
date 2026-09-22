@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, Clock, Check } from "lucide-react";
+import { ArrowRight, Clock, Check } from "lucide-react";
+import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { allServiceItems, serviceCategories } from "@/lib/data";
 
@@ -42,31 +43,14 @@ export default async function TreatmentDetailPage({
 
   return (
     <>
-      <section className="relative flex h-[52vh] min-h-[360px] w-full items-end overflow-hidden bg-ink">
-        <Image
-          src={item.image}
-          alt={item.name}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-70"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/50" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-14 pt-32 lg:px-10">
-          <Link
-            href="/leistungen"
-            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-cream/80 hover:text-cream"
-          >
-            <ArrowLeft size={14} /> Alle Leistungen
-          </Link>
-          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.35em] text-rose-pale/90">
-            {item.categoryTitle}
-          </p>
-          <h1 className="mt-3 max-w-2xl font-display text-4xl font-light leading-tight text-cream sm:text-5xl">
-            {item.name}
-          </h1>
-        </div>
-      </section>
+      <PageHero
+        eyebrow={item.categoryTitle}
+        title={item.name}
+        subtitle={item.description}
+        image={item.image}
+        backHref="/leistungen"
+        backLabel="Alle Leistungen"
+      />
 
       <section className="mx-auto max-w-5xl px-6 py-16 lg:px-10 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
@@ -124,6 +108,7 @@ export default async function TreatmentDetailPage({
                     sizes="(min-width: 1024px) 20vw, 45vw"
                     className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-rose-deep/30 mix-blend-color" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
                   <div className="relative z-10 p-5">
                     <h3 className="font-display text-base text-cream">{r.name}</h3>

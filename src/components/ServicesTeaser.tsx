@@ -46,6 +46,7 @@ export default function ServicesTeaser() {
                 sizes="(min-width: 1024px) 24vw, (min-width: 640px) 45vw, 90vw"
                 className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-rose-deep/30 mix-blend-color" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
               <div className="relative z-10 p-6">
                 <h3 className="font-display text-xl text-cream">{cat.title}</h3>
