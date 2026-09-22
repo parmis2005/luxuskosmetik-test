@@ -17,6 +17,7 @@ export default function FaqPage() {
         title="Gut zu wissen"
         subtitle="Die wichtigsten Antworten rund um Ihren Besuch bei LUMARA – kurz und verständlich."
         image="/images/facial-3.jpg"
+        video="/videos/faq-hero.mp4"
       />
 
       <section className="mx-auto max-w-3xl px-6 py-20 lg:px-10 lg:py-24">

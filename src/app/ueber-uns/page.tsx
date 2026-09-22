@@ -44,6 +44,7 @@ export default function UeberUnsPage() {
         title={`Seit ${brand.founded} für strahlende Haut`}
         subtitle="Lernen Sie die Menschen hinter LUMARA kennen und erfahren Sie, wofür wir stehen."
         image="/images/team-2.jpg"
+        video="/videos/ueber-uns-hero.mp4"
       />
 
       <section className="mx-auto max-w-5xl px-6 py-20 lg:px-10">

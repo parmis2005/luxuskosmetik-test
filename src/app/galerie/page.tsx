@@ -32,6 +32,7 @@ export default function GaleriePage() {
         title="Momente bei LUMARA"
         subtitle="Ein visueller Einblick in unsere Behandlungen, Räume und die kleinen Details, die den Unterschied machen."
         image="/images/interior-2.jpg"
+        video="/videos/galerie-hero.mp4"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-24">

@@ -19,6 +19,7 @@ export default function LeistungenPage() {
         title="Behandlungen für jede Hautbedürfnis"
         subtitle="Transparente Preise, individuelle Beratung und Wirkstoffe, auf die Sie sich verlassen können."
         image="/images/facial-2.jpg"
+        video="/videos/leistungen-hero.mp4"
       />
 
       <section className="mx-auto max-w-5xl px-6 py-20 lg:px-10">

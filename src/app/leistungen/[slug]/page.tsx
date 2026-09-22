@@ -48,6 +48,7 @@ export default async function TreatmentDetailPage({
         title={item.name}
         subtitle={item.description}
         image={item.image}
+        video={`/videos/treatment-${item.slug}.mp4`}
         backHref="/leistungen"
         backLabel="Alle Leistungen"
       />

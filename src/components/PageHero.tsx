@@ -7,6 +7,7 @@ export default function PageHero({
   title,
   subtitle,
   image,
+  video,
   backHref,
   backLabel,
 }: {
@@ -14,19 +15,36 @@ export default function PageHero({
   title: string;
   subtitle: string;
   image: string;
+  video?: string;
   backHref?: string;
   backLabel?: string;
 }) {
   return (
     <section className="relative flex h-[56vh] min-h-[380px] w-full items-end overflow-hidden bg-ink">
-      <Image
-        src={image}
-        alt={title}
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover opacity-70"
-      />
+      {video ? (
+        <video
+          className="absolute inset-0 h-full w-full object-cover opacity-70"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={image}
+          aria-hidden="true"
+        >
+          <source src={video} type="video/mp4" />
+          Ihr Browser unterstützt keine Hintergrundvideos.
+        </video>
+      ) : (
+        <Image
+          src={image}
+          alt={title}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-70"
+        />
+      )}
       {/* Uniform rose color-grade so every subpage banner shares the same tonal mood, regardless of the source photo's original colors. */}
       <div className="absolute inset-0 bg-rose-deep/35 mix-blend-color" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/40" />

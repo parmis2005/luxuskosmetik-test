@@ -19,6 +19,7 @@ export default function GutscheinePage() {
         title="Das Geschenk der Selbstfürsorge"
         subtitle="Ob Geburtstag, Jubiläum oder einfach so – schenken Sie einen Moment purer Entspannung."
         image="/images/gift-box.jpg"
+        video="/videos/gutscheine-hero.mp4"
       />
 
       <section className="mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-24">

@@ -19,6 +19,7 @@ export default function KontaktPage() {
         title="Wir freuen uns auf Sie"
         subtitle="Vereinbaren Sie unkompliziert Ihren Termin oder stellen Sie uns Ihre Fragen – persönlich, telefonisch oder per Formular."
         image="/images/interior-1.jpg"
+        video="/videos/kontakt-hero.mp4"
       />
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-24">
